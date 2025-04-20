@@ -21,10 +21,10 @@ This script runs on Google search pages and modifies the URL to include helpful 
 
 ## Installation
 
-1. Make sure you have the [ViolentMonkey](https://violentmonkey.github.io/) extension installed
-2. [Click here to install the script](https://github.com/YOUR-USERNAME/GoogleWebParamSearch/raw/main/GoogleWebParamSearch.js) (update this link with your actual GitHub raw file URL)
-3. ViolentMonkey will prompt you to confirm the installation
-4. Once installed, the script will automatically run on Google search pages
+1. Install a userscript manager like [ViolentMonkey](https://violentmonkey.github.io/), [Tampermonkey](https://www.tampermonkey.net/), or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
+2. Open the [GoogleWebParamSearch.js](GoogleWebParamSearch.js) file in this repository
+3. Click the "Raw" button on GitHub to view the raw script
+4. Your userscript manager should detect the script and offer to install it
 
 ## Why Use This Script?
 
