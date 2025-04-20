@@ -6,7 +6,7 @@ A ViolentMonkey userscript that enhances Google search by automatically adding p
 
 ## Features
 
-- **Web Results Focus**: Automatically adds `udm=14` parameter to show web results
+- **Enhanced Web Results**: Automatically adds `udm=14` parameter to force Google to show the dedicated "Web" tab results instead of the default mixed "All" results
 - **More Results Per Page**: Adds `num=50` parameter to display 50 results instead of the default 10
 - **Respects User Choices**: Detects when you click on special categories like "All", "Images", or "Videos" and won't override your selection
 - **Seamless Experience**: Works automatically with both Google homepage searches and address bar searches
@@ -15,7 +15,7 @@ A ViolentMonkey userscript that enhances Google search by automatically adding p
 
 This script runs on Google search pages and modifies the URL to include helpful parameters:
 
-1. When you search on Google, it automatically redirects to web results with 50 results per page
+1. When you search on Google, it automatically redirects to the dedicated "Web" tab results (not the default mixed "All" results) with 50 results per page
 2. If you manually click on "All", "Images", "Videos", or other tabs, the script detects this and respects your choice
 3. The script works in the background without requiring any user interaction
 
@@ -29,7 +29,7 @@ This script runs on Google search pages and modifies the URL to include helpful 
 ## Why Use This Script?
 
 - **Save Time**: See more results at once without having to click through multiple pages
-- **Better Results**: Web results often provide more relevant information than the "All" category
+- **Better Results**: The dedicated "Web" tab often provides more focused and relevant information than the default mixed "All" results
 - **Flexibility**: Still allows you to use other search categories when needed
 - **No Configuration Needed**: Works automatically after installation
 
