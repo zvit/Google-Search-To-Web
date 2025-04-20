@@ -29,8 +29,5 @@ yarn-error.log*
 ehthumbs.db
 Thumbs.db
 
-# Personal files not to be committed
-GoogleWebParamSearchZvi.js
-
 # Screenshots and images
 screenshot.png
