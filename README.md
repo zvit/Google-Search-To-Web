@@ -1,6 +1,6 @@
 # Google Web Parameter Search
 
-A ViolentMonkey userscript that enhances Google search by automatically adding parameters for better results.
+A ViolentMonkey userscript that enhances Google search by automatically adding parameters for better results and providing convenient buttons for site-specific searches.
 
 ![Google Logo](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
 
@@ -8,6 +8,7 @@ A ViolentMonkey userscript that enhances Google search by automatically adding p
 
 - **Enhanced Web Results**: Automatically adds `udm=14` parameter to force Google to show the dedicated "Web" tab results instead of the default mixed "All" results that are cluttered with AI summaries, ads, videos, "People also ask" boxes, and other distractions
 - **More Results Per Page**: Adds `num=50` parameter to display 50 results instead of the default 10
+- **Custom Search Buttons**: Adds convenient buttons for searching Reddit, StackOverflow, and GitHub with your current query
 - **Respects User Choices**: Detects when you click on special categories like "All", "Images", or "Videos" and won't override your selection
 - **Seamless Experience**: Works automatically with both Google homepage searches and address bar searches
 
@@ -17,7 +18,8 @@ This script runs on Google search pages and modifies the URL to include helpful 
 
 1. When you search on Google, it automatically redirects to the dedicated "Web" tab results with 50 results per page, bypassing the cluttered default view filled with AI summaries, ads, and distractions
 2. If you manually click on "All", "Images", "Videos", or other tabs, the script detects this and respects your choice
-3. The script works in the background without requiring any user interaction
+3. The script adds convenient buttons below the search tabs for quickly searching your query on Reddit, StackOverflow, and GitHub (with proper spacing from the top navigation)
+4. The script works in the background without requiring any user interaction
 
 ## Installation
 
@@ -42,9 +44,22 @@ Google's default search experience (the "All" tab) has become increasingly clutt
 
 - **Clean, Focused Results**: Forces Google to show primarily web page results without the extra clutter
 - **Save Time**: See 50 results at once instead of just 10, reducing the need to click through multiple pages
+- **Quick Site-Specific Searches**: Easily search your query on Reddit, StackOverflow, or GitHub with just one click
 - **More Relevant Content**: The dedicated "Web" tab provides more focused and relevant information
 - **Flexibility**: Still allows you to manually switch to "All", Images, Videos, or other tabs when needed
 - **No Configuration Needed**: Works automatically after installation
+
+## Custom Search Buttons
+
+The script adds stylish, easy-to-use buttons below the Google search tabs that allow you to quickly search your current query on popular websites:
+
+![Custom Search Buttons Screenshot](https://i.imgur.com/YrP24hQ.png)
+
+- **Reddit**: Search for discussions and community insights about your topic
+- **StackOverflow**: Find programming solutions and technical answers
+- **GitHub**: Discover relevant code repositories and projects
+
+These buttons maintain proper spacing from the navigation bar and provide visual feedback when hovered, making them both functional and visually appealing.
 
 ## Compatibility
 

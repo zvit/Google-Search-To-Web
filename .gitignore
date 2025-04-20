@@ -1,5 +1,4 @@
 # VS Code workspace files
-GoogleWebParamSearch.code-workspace
 *.code-workspace
 
 # Node.js dependencies
@@ -32,3 +31,6 @@ Thumbs.db
 
 # Personal files not to be committed
 GoogleWebParamSearchZvi.js
+
+# Screenshots and images
+screenshot.png
