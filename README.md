@@ -23,8 +23,7 @@ This script runs on Google search pages and modifies the URL to include helpful 
 
 1. Install a userscript manager like [ViolentMonkey](https://violentmonkey.github.io/), [Tampermonkey](https://www.tampermonkey.net/), or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
 2. Open the [GoogleWebParamSearch.js](GoogleWebParamSearch.js) file in this repository
-3. Click the "Raw" button on GitHub to view the raw script
-4. Your userscript manager should detect the script and offer to install it
+3. Use the script in your userscript manager to install it
 
 ## Why Use This Script?
 
