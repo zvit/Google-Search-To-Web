@@ -4,7 +4,7 @@
 // @match       *://www.google.com/search*
 // @grant       GM_setValue
 // @grant       GM_getValue
-// @version     1.3
+// @version     1.4
 // @author      -
 // @icon        https://www.gstatic.com/marketing-cms/assets/images/d5/dc/cfe9ce8b4425b410b49b7f2dd3f3/g.webp=s48-fcrop64=1,00000000ffffffff-rw
 // @description Automatically adds udm=14 and configurable num parameter to Google web searches and adds custom search buttons
