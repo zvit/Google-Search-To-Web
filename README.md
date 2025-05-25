@@ -1,4 +1,4 @@
-# Google Web Parameter Search
+# Google Web Parameter Search v1.4
 
 A ViolentMonkey userscript that enhances Google search by automatically adding parameters for better results and providing convenient buttons for site-specific searches.
 
