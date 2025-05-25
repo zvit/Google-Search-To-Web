@@ -7,7 +7,7 @@ A ViolentMonkey userscript that enhances Google search by automatically adding p
 ## Features
 
 - **Enhanced Web Results**: Automatically adds `udm=14` parameter to force Google to show the dedicated "Web" tab results instead of the default mixed "All" results that are cluttered with AI summaries, ads, videos, "People also ask" boxes, and other distractions
-- **More Results Per Page**: Adds `num=50` parameter to display 50 results instead of the default 10
+- **Configurable Results Per Page**: Allows setting the number of results per page (default 50) via a settings panel accessible with Shift+S
 - **Custom Search Buttons**: Adds convenient buttons for searching Reddit, StackOverflow, and GitHub with your current query
 - **Respects User Choices**: Detects when you click on special categories like "All", "Images", or "Videos" and won't override your selection
 - **Seamless Experience**: Works automatically with both Google homepage searches and address bar searches
@@ -16,7 +16,7 @@ A ViolentMonkey userscript that enhances Google search by automatically adding p
 
 This script runs on Google search pages and modifies the URL to include helpful parameters:
 
-1. When you search on Google, it automatically redirects to the dedicated "Web" tab results with 50 results per page, bypassing the cluttered default view filled with AI summaries, ads, and distractions
+1. When you search on Google, it automatically redirects to the dedicated "Web" tab results with a configurable number of results per page (default 50), bypassing the cluttered default view filled with AI summaries, ads, and distractions
 2. If you manually click on "All", "Images", "Videos", or other tabs, the script detects this and respects your choice
 3. The script adds convenient buttons below the search tabs for quickly searching your query on Reddit, StackOverflow, and GitHub (with proper spacing from the top navigation)
 4. The script works in the background without requiring any user interaction
@@ -48,6 +48,14 @@ Google's default search experience (the "All" tab) has become increasingly clutt
 - **More Relevant Content**: The dedicated "Web" tab provides more focused and relevant information
 - **Flexibility**: Still allows you to manually switch to "All", Images, Videos, or other tabs when needed
 - **No Configuration Needed**: Works automatically after installation
+
+## Settings Panel
+
+The script includes a settings panel that can be accessed by pressing **Shift+S** anywhere on a Google search page:
+
+- **Results Per Page**: Customize how many search results appear on each page (between 10-100)
+- The setting is saved between sessions and automatically applied to new searches
+- Google Images searches will not be affected by the results per page setting
 
 ## Custom Search Buttons
 

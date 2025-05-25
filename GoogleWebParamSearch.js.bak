@@ -3,7 +3,7 @@
 // @namespace   ViolentMonkey Scripts
 // @match       *://www.google.com/search*
 // @grant       none
-// @version     2.0
+// @version     1.2
 // @author      -
 // @icon        https://www.gstatic.com/marketing-cms/assets/images/d5/dc/cfe9ce8b4425b410b49b7f2dd3f3/g.webp=s48-fcrop64=1,00000000ffffffff-rw
 // @description Automatically adds udm=14 and num=50 parameters to Google web searches and adds custom search buttons
@@ -20,8 +20,12 @@
  * - The URL already has any UDM parameter (used by Google for different search tabs)
  * - You're on a special search page (Images, Videos, News, etc.)
  * - You're on the "All" search tab
+ * - You came from a page with a UDM parameter (fixes tab navigation issues)
  *
- * This allows you to use any search view when you want to without unwanted redirects.
+ * FIXED IN v1.2:
+ * - Fixed issue with redirecting back to Web results when clicking on tabs like Images, Videos, etc.
+ * - Added referrer checking to prevent unwanted redirects when navigating between tabs
+ * - Improved detection of special search pages using UDM parameters
  *
  * The script runs automatically when you search from the Google homepage
  * or when you use the Chrome address bar with Google as your search engine.
