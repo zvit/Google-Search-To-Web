@@ -31,3 +31,6 @@ Thumbs.db
 
 # Screenshots and images
 screenshot.png
+
+# Ignore all folders that start with a dot
+.*/
