@@ -34,3 +34,12 @@ screenshot.png
 
 # Ignore all folders that start with a dot
 .*/
+.augment/
+.clinerules/
+.cursor/
+.kilocode/
+.kiro/
+.qoder/
+.roo/
+.superdesign/
+.windsurf/
