@@ -4,11 +4,11 @@
 // @match       *://www.google.com/search*
 // @grant       GM_setValue
 // @grant       GM_getValue
-// @version     1.4
+// @version     1.5
 // @author      -
 // @icon        https://www.gstatic.com/marketing-cms/assets/images/d5/dc/cfe9ce8b4425b410b49b7f2dd3f3/g.webp=s48-fcrop64=1,00000000ffffffff-rw
 // @description Automatically adds udm=14 and configurable num parameter to Google web searches and adds custom search buttons
-// @run-at      document-end
+// @run-at      document-start
 // ==/UserScript==
 
 /*
@@ -50,6 +50,9 @@
     
     // Default settings
     const DEFAULT_RESULTS_PER_PAGE = 50;
+    
+    // Detect mobile devices
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     
     // Get stored results per page or use default
     function getResultsPerPage() {
@@ -143,7 +146,15 @@
     }
 
     // Run when the page loads
-    modifyGoogleSearchUrl();
+    if (isMobile) {
+        // Run immediately on mobile
+        modifyGoogleSearchUrl();
+        // Run again after short delays to catch late-loading elements
+        setTimeout(modifyGoogleSearchUrl, 100);
+        setTimeout(modifyGoogleSearchUrl, 500);
+    } else {
+        modifyGoogleSearchUrl();
+    }
 
     // Also run when URL changes without page reload (Google sometimes does this)
     const observer = new MutationObserver(() => {
@@ -399,6 +410,26 @@
             newButton.appendChild(link);
 
             newBarElement.appendChild(newButton);
+        }
+        
+        // Add settings button for mobile (since Shift+S doesn't work well)
+        if (isMobile) {
+            const settingsButton = document.createElement('button');
+            settingsButton.textContent = '⚙️';
+            settingsButton.style.position = 'fixed';
+            settingsButton.style.bottom = '20px';
+            settingsButton.style.right = '20px';
+            settingsButton.style.zIndex = '9999';
+            settingsButton.style.padding = '12px';
+            settingsButton.style.borderRadius = '50%';
+            settingsButton.style.border = 'none';
+            settingsButton.style.backgroundColor = '#1a73e8';
+            settingsButton.style.color = 'white';
+            settingsButton.style.fontSize = '20px';
+            settingsButton.style.cursor = 'pointer';
+            settingsButton.style.boxShadow = '0 2px 8px rgba(0,0,0,0.3)';
+            settingsButton.onclick = createSettingsPanel;
+            document.body.appendChild(settingsButton);
         }
     });
 })();

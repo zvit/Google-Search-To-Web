@@ -1,4 +1,4 @@
-# Google Web Parameter Search v1.4
+# Google Web Parameter Search v1.5
 
 A ViolentMonkey userscript that enhances Google search by automatically adding parameters for better results and providing convenient buttons for site-specific searches.
 
@@ -73,6 +73,7 @@ These buttons maintain proper spacing from the navigation bar and provide visual
 
 - Works with Chrome, Firefox, Edge, and other browsers that support ViolentMonkey
 - Compatible with Google search in all regions and languages
+- **Mobile Support**: The script includes mobile compatibility fixes and should work on mobile devices with userscript managers (like Safari + Userscripts on iOS). However, since I can't test on all mobile platforms, please report any mobile-specific issues as GitHub issues and I'll investigate them.
 
 ## Privacy
 
