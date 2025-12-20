@@ -43,3 +43,7 @@ screenshot.png
 .roo/
 .superdesign/
 .windsurf/
+
+# Documentation files to ignore
+rules.md
+iphone_fix_guide.md
